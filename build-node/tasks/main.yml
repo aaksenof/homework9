@@ -15,10 +15,10 @@
     chdir: '{{ workdir }}'
 
 - name: Synchronize war-file
-  synchronize:
-    mode: pull
+  fetch:
     src: '{{ workdir }}/target/hello-1.0.war'
     dest: '{{ workdir }}/hello-1.0.war'
+    flat: yes
 
 - name: Clear source
   file:
