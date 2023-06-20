@@ -1,0 +1,12 @@
+---
+- name: build-node configuration
+  hosts: build
+  become: true
+  roles:
+    - 'build_node'
+
+- name: prod-node configuration
+  hosts: prod
+  become: true
+  roles:
+    - 'prod_node'
