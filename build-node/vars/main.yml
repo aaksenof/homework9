@@ -1,2 +1,7 @@
 ---
-# vars file for build-node
+package:
+  - 'default-jdk'
+  - 'maven'
+  - 'git'
+repository: 'https://github.com/boxfuse/boxfuse-sample-java-war-hello.git'
+workdir: '/opt/app'
