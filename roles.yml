@@ -3,10 +3,10 @@
   hosts: build
   become: true
   roles:
-    - 'build_node'
+    - 'build-node'
 
 - name: prod-node configuration
   hosts: prod
   become: true
   roles:
-    - 'prod_node'
+    - 'prod-node'
